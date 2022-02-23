@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-const GROUPS_TOLLKIT = [
+const groups = [
   {
     name: "Revet Scenkonst",
     website: "https://www.revetscenkonst.se/",
@@ -46,16 +46,16 @@ const Home: NextPage = () => {
         <h1 className="m-0 text-6xl font-bold">SCEN46</h1>
 
         <p className="my-16 text-xl text-center">
-          SCEN46 är ett teaterkollektiv i Göteborg där ett flertal frigrupper
-          bedriver verksamhet.
+          Scen46 är en kollektiv scen i Göteborg där ett flertal olika
+          scenkonstgrupper bedriver verksamhet.
         </p>
 
         <div className="grid max-w-screen-md sm:grid-cols-3 md:grid-cols-3">
-          {GROUPS_TOLLKIT.map((group) => (
+          {groups.map((group) => (
             <a
               href={group.website}
               key={group.name}
-              className="p-6 m-4 text-xl text-center border rounded-xl"
+              className="self-center p-4 m-4 text-xl tracking-wide text-center border rounded-xl whitespace-nowrap hover:bg-sky-400 hover:text-white"
               target="_blank"
               rel="noreferrer"
             >
