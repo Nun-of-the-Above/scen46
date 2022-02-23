@@ -1,34 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
-
-const groups = [
-  {
-    name: "Revet Scenkonst",
-    website: "https://www.revetscenkonst.se/",
-  },
-  {
-    name: "Smuts",
-    website: "https://www.facebook.com/teater.smuts/",
-  },
-  {
-    name: "Rymdstationen",
-    website: "https://www.rymdstationen.com/",
-  },
-  {
-    name: "Kiriaka",
-    website: "https://kiriaka.se/",
-  },
-  {
-    name: "Slip of the Lip",
-    website: "https://www.slipofthelip.se/",
-  },
-  {
-    name: "Quizadillas",
-    website: "https://quizadillas.se/",
-  },
-];
+import { groups } from "../constants/GROUPS";
 
 const Home: NextPage = () => {
   return (
@@ -43,9 +16,9 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="flex flex-col items-center justify-center min-h-screen px-0 py-16">
-        <h1 className="m-0 text-6xl font-bold">SCEN46</h1>
+        <h1 className="m-0 text-6xl tracking-widest font-extralight">SCEN46</h1>
 
-        <p className="my-16 text-xl text-center">
+        <p className="my-12 text-2xl tracking-wide text-center font-extralight">
           Scen46 är en kollektiv scen i Göteborg där ett flertal olika
           scenkonstgrupper bedriver verksamhet.
         </p>
@@ -55,7 +28,7 @@ const Home: NextPage = () => {
             <a
               href={group.website}
               key={group.name}
-              className="self-center p-4 m-4 text-xl tracking-wide text-center border rounded-xl whitespace-nowrap hover:bg-sky-400 hover:text-white"
+              className="self-center p-4 m-4 text-xl font-light tracking-wide text-center border rounded-xl whitespace-nowrap hover:bg-sky-400 hover:text-white"
               target="_blank"
               rel="noreferrer"
             >
