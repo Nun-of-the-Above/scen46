@@ -63,6 +63,14 @@ const Home: NextPage = () => {
             </a>
           ))}
         </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d533.0553891114885!2d11.917454488183903!3d57.695705598814065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff35a3ff80173%3A0x6f1b673cd409f2b5!2sSCEN46!5e0!3m2!1sen!2sse!4v1645641811704!5m2!1sen!2sse"
+          width="700"
+          height="300"
+          allowFullScreen={false}
+          loading="lazy"
+          className="mt-10"
+        />
       </main>
 
       {/* <footer className={styles.footer}>
