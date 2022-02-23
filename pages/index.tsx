@@ -50,12 +50,12 @@ const Home: NextPage = () => {
           bedriver verksamhet.
         </p>
 
-        <div className="grid max-w-screen-md grid-cols-3">
+        <div className="grid max-w-screen-md sm:grid-cols-3 md:grid-cols-3">
           {GROUPS_TOLLKIT.map((group) => (
             <a
               href={group.website}
               key={group.name}
-              className="p-6 m-4 text-xl text-left text-center border rounded-xl"
+              className="p-6 m-4 text-xl text-center border rounded-xl"
               target="_blank"
               rel="noreferrer"
             >
@@ -65,11 +65,9 @@ const Home: NextPage = () => {
         </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d533.0553891114885!2d11.917454488183903!3d57.695705598814065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff35a3ff80173%3A0x6f1b673cd409f2b5!2sSCEN46!5e0!3m2!1sen!2sse!4v1645641811704!5m2!1sen!2sse"
-          width="700"
-          height="300"
           allowFullScreen={false}
           loading="lazy"
-          className="mt-10"
+          className="w-full mt-10 h-72"
         />
       </main>
 
